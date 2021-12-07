@@ -1,0 +1,43 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/pageStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <h1>Beyond the New</h1>
+    <p>"Beyond the New" is a web adaptation of the same-titled written manifesto by Hella Jongerius & Louise Schouwenberg. The requirements of this assignment were to create a text-based webpage and utilize CSS and animations to create an interactive experience while navigating the webpage, specifically the interaction of scrolling. The goal of this assignment was to better understand CSS and gain experience with coding animations.</p>
+    <h2>Inspiration</h2>
+    <p>I chose to make a webpage based on the manifesto "Beyond the New" because, in my typography class, we were creating posters using the contents of a manifesto of our choice. I decided that I would make a digital version of my final poster.</p>
+    <figure>
+    <img id="poster" src="./images/eventposter.png">
+    <figcaption>This is the poster I made based off of "Beyond the New."</figcaption>
+    </figure>
+    <div>
+   <a href="http://beyondthenew.jongeriuslab.com/download/Beyond-the-new-manifest.pdf">Click here to read the full manifesto.</a>
+    </div>
+    <h2>Process</h2>
+    <p>To begin this project, I laid out the text of the manifesto in HTML. I put each bullet point of the manifesto in seperate divs because I had the idea to position the text as "sticky" to create a "stacking" effect as the user scrolls. I then went to Google Fonts to find the right typefaces. Because I used "Baskerville" in my poster, I decided that I would use this for the body. I couldn't find the sans-serif typeface that I used, so I decided to use a similar one called "Heebo." I also went into CSS and began to add color to the text based on the hex codes of my poster. After styling everything I had to start creating the animations</p>
+    <p>First I decided to work on the title:"Beyond the New, a search for ideals in design." Prior to this assignment, I had never worked with coding animations before. After a bit of experimentation, I found that by applying "animation-delay" to certain animations I could time when each block of text appears on the screen. I used the fade-in animation so the text would appear seamlessly. I also chose to make the text fade out so that the main focus would be on the contents of the manifesto and not just the title.</p>
+    <figure>
+        <img src="images/manifesto.gif">
+        <figcaption>This is what appears when the page loads, the title appears.</figcaption>
+    </figure>
+    <p>Next, I had to figure out how to make each point of the manifesto "stack" on top of eachother when the user scrolls. I positioned each of these points as "sticky" and set a margin at the top because I wanted "A search for new ideals in design." to act as a header. I also added a background color, the same as the background of the webpage, behind the text of each of these points and applied a blur to it so that, when stacking on top of eachother, they would seem to fade into eachother seamlessly.</p>
+    <figure>
+        <img src="images/scrollManifesto.gif">
+        <figcaption>When scrolling, each point stacks on top of eachother.</figcaption>
+    </figure>
+
+    <p>If I were to redo this assignment, I would definitely change the layout. The type looks awkward and cramped in the top left corner and the line spacing is way too large. I realized this at the time but because I did not have as much experience with coding as I do now, I simply did not know how to do that when I was making this webpage.</p>
+    
+
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,95 @@
+body {
+    margin-top:0;
+    margin-left:0;
+    margin-right:0;
+    background-color:black;
+    margin-bottom:90;
+}
+
+
+
+h1 {
+    color:white;
+    margin-top:55px;
+    font-family: "Roboto";
+   font-weight:700;
+   font-size:108;
+   text-align:center;
+}
+
+h2 {
+    width:fit-content;
+    margin-right:auto;
+    margin-left:auto;
+    background-color:lightgrey;
+    font-family: "Roboto";
+   font-weight:700;
+   font-size:60;
+   text-align:center;
+   margin-top:130;
+   padding-left:30px;
+   padding-right:30px;
+}
+
+p {
+    padding:30px;
+    background-color:lightgrey;
+    display:block;
+    width: 55%;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:33px;
+    font-family: "Roboto";
+    margin-top:20;
+   font-weight:400;
+   font-size:20px;
+   text-align:left;
+}
+
+a {
+    text-align:center;
+    color:blue;
+    font-family: "Roboto";
+   font-weight:400;
+   font-size:15;
+}
+
+figcaption {
+    text-align:center;
+    margin-top:20px;
+    color:white;
+    font-family: "Roboto";
+   font-weight:400;
+   font-size:15;
+}
+div {
+    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30;
+    margin-bottom:30;
+}
+
+img:not([id="simCursor"],[id="poster"]) {
+    display:block;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}
+
+#simCursor {
+    display:block;
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}
+
+#poster {
+    display:block;
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}

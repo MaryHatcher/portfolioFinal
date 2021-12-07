@@ -1,0 +1,65 @@
+body {
+    margin:0;
+    background-color:black;
+}
+
+
+
+
+a {
+    color:white;
+    margin:0;
+    position:fixed;
+    font-family: "Roboto";
+   font-weight:700;
+   font-size:108;
+   text-decoration:none;
+}
+
+#backButton {
+    float:left;
+    left:30;
+    width:3%;
+    top:5%;
+}
+
+#manifestoTXT {
+    float:right;
+    right: 34%;
+    top:600;
+}
+
+#plateTXT {
+    float:right;
+    right: 34%;
+    top:333;
+}
+
+#htmlTXT {
+    float:right;
+    right: 34%;
+    top:55; 
+}
+
+img {
+    position:fixed;
+    margin:0;
+    width: 30%;
+}
+#plate {
+    float: right;
+    float: right;
+    top: 293px;
+    right: 30;
+}
+
+#html {
+    float: right;
+    top: 25;
+    right: 30;
+}
+#manifesto {
+    float: right;
+    top: 560px;
+    right: 30;
+}

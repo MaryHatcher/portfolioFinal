@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/pageStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Break-A-Plate</h1>
+        <p>I created this webpage for an assignment where I had to create a web-based "toy" using javascript. Break-A-Plate is a virtual plate that breaks into pieces and makes "crashing" sounds when the user hovers on top of it.</p>
+        <h2>Process</h2>
+        <figure>
+            <img src="images/platePhotoshop.png">
+            <figcaption>Creating and laying out visual assets in photoshop.</figcaption>
+        </figure>
+        <p>To begin, I needed to create the visuals for this webpage. For the plate, I found a transparent png of a plate online and then overlayed the text "BREAK-a-PLATE" on top of it. I also had to create the individual "shards" or pieces of plate that would fall off when hovered over. In order to do this, I used photoshop to cut the plate into multiple different shards, trying my best to make it look like broken pieces. When I was done, I saved each of these pieces as individual pngs so that they could each be their own elements in the code.</p>
+        <figure>
+            <img src="images/plateShards.png">
+            <figcaption>Each individual "shard" of the plate.</figcaption>
+        </figure>
+        <p>After having this all done, I input the pngs of each plate shard into html, then used css to piece them together into the shape of a plate by referring back to my photoshop layout and the x and y values of each individual shard. I then began working on the animation of the shards falling once hovered on top of. A problem I ran into was that when I would hover on top of a shard of plate, every shard fell down instead of just the shard that was hovered on top of. It took me a lot of trial and error, but with some help from my Professor I assigned a value to each shard and then made the target of the "falling" function each of these individual values.</p>
+        <figure>
+        <img src="./images/breakplate.gif">
+        <figcaption>Each individual shard falling once hovered over.</figcaption>
+        </figure>
+
+        <p>My initial Idea for this project was that the mouse would "hit" against and be deflected by the plate. Because I had no knowledge of javascript coming into this assignment, I assumed that this would be quite simple. I was wrong. I learned that in order to do this, I had to simulate a mouse and redirect it from anywhere the plate was located, also accounting for when a piece of the plate falls. After a lot of research, trials, and multiple errors, I realized I did not have the experience to do something so complex. If it wasn't for a two-week time constraint, I would have tried until I got it to work, but I had to cut some corners in order to get it done in time.</p>
+        <figure>
+            <img id="simCursor" src="images/simulatedcursor.gif">
+            <figcaption>This is an example of a simulated cursor being used to create an illusion that the mouse is being deflected by certain elements.
+            </figcaption>
+        </figure>
+        <p>Because I was no longer going to have the mouse be deflected by the plate, I felt that there needed to be more to the webpage than just a plate that breaks apart when hovered over. In order to add more depth to my page, I decided to add sound. After searching for "breaking glass sound effects" on freesound.com, I found four sound effects that I liked. I added these sound effects below.</p>
+        <div>
+        <audio controls src="sounds/202093__spookymodem__bottle-shattering.wav"></audio>
+        <audio controls src="sounds/330800__czarcazas__shattering-glass-small.mp3"></audio>
+        <audio controls src="sounds/422633__aurelon__break-something-ice-glass.flac"></audio>
+        <audio controls src="sounds/446137__justinvoke__glass-shatter.wav"></audio>
+        </div>
+        <p>I wanted a different sound effect to be triggered every time a piece of plate fell, so I made an array containing each sound and created a loop. I applied this to the function that allows the shards to fall so that once a new shard is hovered over, not only will it fall down but the next sound from the array will also play. I was really happy with how these sound effects turned out because they give the interaction an almost-"satisfying" feel.</p>
+        <div>
+        <figure>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/fafLSamFIHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <figcaption>The webpage with audio.</figcaption>
+        </figure>
+        </div>
+
+        <p>One problem I came accross due to Google Chrome being the browser I was using is that for some reason Chrome doesnt allow any sound to play unless the webpage is clicked first. To tackle this issue, I put the text "Click anywhere to enable sound!" at the top of the webpage. Once the user clicks anywhere on the webpage, this text disappears and the sound is now enabled. If I were to redo this project, I would make an "enable sound" button and place in the bottom left corner of the page. The sound would be disabled until this button is clicked in order for it to work accross all browsers and be more effective in terms of user experience in general.</p>
+    </body>    
+
+</html>
